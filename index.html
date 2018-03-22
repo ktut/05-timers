@@ -10,18 +10,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-    <h1>The Simpsons Trivia</h1>
-    <!-- start game on button click -->
-    <button class="js-start">Do You Want to Play a Game?</button>
+    <div class="quiz-contain">
+        <h1>The Simpsons Trivia!</h1>
+        <!-- start game on button click -->
+        <button class="js-start">Play!</button>
 
-    <!-- timer gets rendered here -->
-    <div class="js-timer"></div>
+        <!-- timer gets rendered here -->
+        <div class="js-timer"></div>
 
-    <!-- questions get rendered here -->
-    <div class="js-questions"></div>
+        <!-- questions get rendered here -->
+        <div class="js-questions"></div>
 
-    <!-- stop game on button click -->
-    <button class="js-stop">Done</button>
+        <!-- stop game on button click -->
+        <button class="js-stop">Done</button>
+
+        <div class="js-results">
+            <h2>All done!</h2>
+            <h2>Correct: <span id="correct"></span></h2>
+            <h2>Incorrect: <span id="incorrect"></span></h2>
+            <button class="js-reload">Try again?</button>
+        </div>
+
+    </div>
 
     <script src="./assets/javascript/app.js"></script>
 </body>
